@@ -1,0 +1,13 @@
+[package]
+name = "rust-example-todo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8.1"
+serde = { version = "1.0.217", features = ["derive"] }
+tokio = { version = "1.43.0", features = ["full"] }
+rusqlite = { version = "0.33.0", features = ["bundled"] }
+anyhow = "1.0.95"
+tracing-subscriber = { version = "^0.3", features = ["json"] }
+tracing = { version = "0.1.41", features = ["attributes"] }
